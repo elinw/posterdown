@@ -1,0 +1,39 @@
+---
+title: 
+author:
+  - name: 
+    affil: 
+    orcid: 
+affiliation:
+  - num: 1
+    address: 
+column_numbers: 3
+logoright_name: 
+logoleft_name: 
+output: 
+  posterdown::posterdown_html:
+    self_contained: false
+bibliography: packages.bib
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+```
+```{css echo=FALSE}
+
+```
+
+# Introduction
+
+
+# Methods
+
+# Results
+
+
+# Next Steps
+
+
+# Conclusion
+
+
+# References

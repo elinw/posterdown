@@ -33,10 +33,9 @@ knitr::opts_chunk$set(results = 'asis',
                       out.width = "100%")
 options(knitr.table.format = "html") 
 ```
+```{css echo=FALSE}
 
-
-# Introduction
-
+```
 
 ```{r, include=FALSE}
 knitr::write_bib(c('posterdown', 'rmarkdown','pagedown'), 'packages.bib')
