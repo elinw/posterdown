@@ -1,0 +1,43 @@
+---
+title: 
+author:
+  - name: 
+    affil: 
+    twitter: 
+    email: 
+    orcid: 
+    main: true
+affiliation:
+  - num: 1
+    address: 
+main_findings:
+logoleft_name: '![](){.main-img-left}'
+logoright_name: '![](){.main-img-right}'
+output: 
+  posterdown::posterdown_betterland:
+    self_contained: false
+    pandoc_args: --mathjax
+    highlight: haddock
+    number_sections: false
+link-citations: true
+bibliography: packages.bib
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(results = 'asis',
+                      echo = FALSE,
+                      warning = FALSE,
+                      tidy = FALSE,
+                      message = FALSE,
+                      fig.align = 'center',
+                      out.width = "100%")
+options(knitr.table.format = "html") 
+```
+
+
+# Introduction
+
+
+```{r, include=FALSE}
+knitr::write_bib(c('posterdown', 'rmarkdown','pagedown'), 'packages.bib')
+```

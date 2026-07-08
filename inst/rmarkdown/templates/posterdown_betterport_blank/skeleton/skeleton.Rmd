@@ -1,0 +1,36 @@
+---
+main_topsize: 0.2 #percent coverage of the poster
+main_bottomsize: 0.1
+#ESSENTIALS
+title: 
+author:
+  - name: 
+    affil:
+    main: true
+    orcid: 
+    twitter: 
+    email: 
+    address: Department of Earth Science, Brock University
+main_findings:
+  - 
+logoleft_name:
+logoright_name: 
+logocenter_name: 
+output: 
+  posterdown::posterdown_betterport:
+    self_contained: false
+    pandoc_args: --mathjax
+    number_sections: false
+bibliography: packages.bib
+link-citations: true
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      tidy = FALSE,
+                      message = FALSE,
+                      fig.align = 'center',
+                      out.width = "100%")
+options(knitr.table.format = "html") 
+```
