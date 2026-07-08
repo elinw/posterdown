@@ -2,8 +2,8 @@
 % Please edit documentation in R/posterdown.R
 \docType{package}
 \name{posterdown}
-\alias{posterdown}
 \alias{posterdown-package}
+\alias{posterdown}
 \title{posterdown package}
 \description{
 This package creates posters for conferences
@@ -23,6 +23,14 @@ Creates an R Markdown template for a PDF poster document via HTML
 Creates an R Markdown template for a PDF poster document via HTML
 }
 
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/brentthorne/posterdown}
+  \item Report bugs at \url{https://github.com/brentthorne/posterdown/issues}
+}
+
+}
 \author{
 Brent Thorne
 }

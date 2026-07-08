@@ -27,7 +27,6 @@ Imports:
     yaml
 Suggests: knitr
 Encoding: UTF-8
-LazyData: true
 VignetteBuilder: knitr
-RoxygenNote: 6.1.1
+RoxygenNote: 8.0.0
 Roxygen: list(markdown = TRUE)

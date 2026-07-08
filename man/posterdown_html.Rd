@@ -6,23 +6,30 @@
 \alias{posterdown_betterport}
 \title{Posterdown HTML format (using pagedown::poster_relaxed)}
 \usage{
-posterdown_html(..., template = find_resource("posterdown_html",
-  "template.html"), css = NULL)
+posterdown_html(
+  ...,
+  template = find_resource("posterdown_html", "template.html"),
+  css = NULL
+)
 
-posterdown_betterland(...,
+posterdown_betterland(
+  ...,
   template = find_resource("posterdown_betterland", "template.html"),
-  css = NULL)
+  css = NULL
+)
 
-posterdown_betterport(...,
+posterdown_betterport(
+  ...,
   template = find_resource("posterdown_betterport", "template.html"),
-  css = NULL)
+  css = NULL
+)
 }
 \arguments{
 \item{...}{Additional arguments to \code{rmarkdown::html_document}}
 
-\item{template}{See \code{\link{html_paged}()}.}
+\item{template}{The path to the Pandoc template to convert Markdown to HTML.}
 
-\item{css}{See \code{\link{html_paged}()}.}
+\item{css}{A character vector of CSS and Sass file paths. See \link[pagedown:html_paged]{pagedown::html_paged}}
 }
 \value{
 R Markdown output format to pass to
@@ -38,7 +45,7 @@ BetterPoster movement from twitter.
 \examples{
 \donttest{
 file <- file.path(tempdir(),"foo.rmd")
-rmarkdown::draft(file, template="posterdown_html", package="posterdown")
+rmarkdown::draft(file, template="posterdown_html", package="posterdown", edit = FALSE)
 }
 
 }
