@@ -1,31 +1,37 @@
 #' Posterdown HTML format (using pagedown::poster_relaxed)
 #'
-#' @inheritParams pagedown::poster_relaxed
 #' @param ... Additional arguments to `rmarkdown::html_document`
-#'
+#' @param template full path to template
+#' @param  css A character vector of CSS and Sass file paths. If a path does
+#' not contain the ‘.css’, ‘.sass’, or ‘.scss’ extension, it is assumed to be a
+#' built-in CSS file. See [pagedown::poster_relaxed]
 #' @return R Markdown output format to pass to
 #'   [rmarkdown::render()]
 #'
 #'@examples
 #'\donttest{
 #'file <- file.path(tempdir(),"foo.rmd")
-#'rmarkdown::draft(file, template="posterdown_html", package="posterdown")
+#'rmarkdown::draft(file, template="posterdown_html", package="posterdown", edit = FALSE)
 #'}
 #'
 #' @export
-posterdown_html <- function(...,
-	template = find_resource("posterdown_html", "template.html"),
-	css = NULL) {
-	pagedown::poster_relaxed(..., css = css, template = template)
+posterdown_html <- function(
+  ...,
+  template = find_resource("posterdown_html", "template.html"),
+  css = NULL
+) {
+  pagedown::poster_relaxed(..., css = css, template = template)
 }
 
 #' @description The output format `poster_betterland()` mimics the style of the
 #' BetterPoster movement from twitter.
 #' @rdname posterdown_html
 #' @export
-posterdown_betterland <- function(...,
-                            template = find_resource("posterdown_betterland", "template.html"),
-                            css = NULL) {
+posterdown_betterland <- function(
+  ...,
+  template = find_resource("posterdown_betterland", "template.html"),
+  css = NULL
+) {
   pagedown::poster_relaxed(..., css = css, template = template)
 }
 
@@ -33,8 +39,10 @@ posterdown_betterland <- function(...,
 #' BetterPoster movement from twitter.
 #' @rdname posterdown_html
 #' @export
-posterdown_betterport <- function(...,
-                                  template = find_resource("posterdown_betterport", "template.html"),
-                                  css = NULL) {
+posterdown_betterport <- function(
+  ...,
+  template = find_resource("posterdown_betterport", "template.html"),
+  css = NULL
+) {
   pagedown::poster_relaxed(..., css = css, template = template)
 }

@@ -29,5 +29,5 @@ Suggests: knitr
 Encoding: UTF-8
 LazyData: true
 VignetteBuilder: knitr
-RoxygenNote: 6.1.1
 Roxygen: list(markdown = TRUE)
+Config/roxygen2/version: 8.0.0
